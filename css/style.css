@@ -1,0 +1,12 @@
+#banner {
+    background:url('dope.png');
+    width:100%;
+    min-height: 300px;
+}
+
+#card {
+  position: absolute;
+  bottom: 36%;
+  right: 0%;
+  width: 30%;
+}
