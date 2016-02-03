@@ -1,50 +1,115 @@
 <html>
   <head>
-    <title>Customized Bootstrap Screenshot</title>
+    <title>Standard Bootstrap Screenshot</title>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <nav class="navbar navbar-light bg-faded">
-      <a class="navbar-brand" href="#"><img src="ya.png" height="42" width="42"></a>
+      <a class="navbar-brand" href="#">CSE 3345</a>
       <ul class="nav navbar-nav">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="#">Assignments</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Lectures</a>
         </li>
+        <li class="nav-item col-sm-offset-6 col-sm-6">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="#">Account</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Logout</a>
+        </li>
       </ul>
     </nav>
-    <div id="banner">
-      <div id="card" class="card">
-        <div class="card-block ">
-          <h4 class="card-title">Call To Action</h4>
-          <p class="card-text">Pellentesque vulputate, neque sed varius scelerisque, ligula massa lacinia nisl, et eleifend diam lorem et lacus.</p>
-          <a href="#" class="btn btn-primary">Action</a>
-        </div>
-      </div>
-    </div>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-xs-6">
-          <h3><b>Contact Us!</b></h3>
+        <br/>
+        <div class="col-xs-3">
+          <ul class="list-group">
+            <li class="list-group-item list-group-item disabled">Your Assignments</li>
+            <li class="list-group-item list-group-item-success">Assignment 1 <span class=" col-sm-offset-5 label label-success">92</span></li>
+            <li class="list-group-item list-group-item-success">Assignment 2 <span class=" col-sm-offset-5 label label-success">100</span></li>
+            <li class="list-group-item list-group-item-warning">Assignment 3 <span class=" col-sm-offset-5 label label-warning">74</span></li>
+            <li class="list-group-item list-group-item-danger">Assignment 4 <span class=" col-sm-offset-5 label label-danger">23</span></li>
+            <li class="list-group-item list-group-item-success">Assignment 5 <span class=" col-sm-offset-5 label label-success">95</span></li>
+          </ul>
+        </div>
+        <div class="col-xs-8">
+          <h1>Assignment 1</h1>
+          <p>Pellentesque est purus, accumsan varius ante</p>
+          <div class="alert alert-success" role="alert"><b>Well done!</b> You got a 92 on this assignment</div>
+          <h2>Grading Rubric</h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Description</th>
+                <th>Available Points</th>
+                <th>Your Points</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Aenean congue sagittis arcu.</td>
+                <td>40</td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Integer dapibus ex sed pellentesque.</td>
+                <td>40</td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Quisque viverra risus leo.</td>
+                <td>20</td>
+                <td>12</td>
+              </tr>
+              <tr class="table-active">
+                <th scope="row"></th>
+                <td class="text-xs-right"><b>Total</b></td>
+                <td>20</td>
+                <td>12</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="row">
+            <div class="col-xs-6">
+              <h3><b>Comments</b></h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempus vestibulum urna, et dictum ex hendrerit quis. Aenean congue sagittis arcu. Donec at erat nec metus feugiat egestas ac ut sem. Aliquam at felis pretium, iaculis orci ut, porttitor mauris.</p>
+            </div>
+            <div class="col-xs-6">
+              <div class="card">
+                <div class="card-block">
+                  <h4 class="card-title">Get Bonus Points</h4>
+                  <p class="card-text">Pellentesque vulputate, neque sed varius scelerisque, ligula massa lacinia nisl, et eleifend diam lorem et lacus.</p>
+                  <a href="#" class="btn btn-primary">Start Bonus Exercise</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3><b>Dispute Grade</b></h3>
           <form>
             <div class="form-group row">
-              <label for="inputEmail3" class="col-sm-2 form-control-label">Name</label>
+              <label for="inputEmail3" class="col-sm-2 form-control-label">Complaint</label>
               <div class="col-sm-10">
-                <input type="email" class="form-control" id="inputEmail3" placeholder="Your name">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Your complaint ">
               </div>
             </div>
             <div class="form-group row">
-              <label for="inputPassword3" class="col-sm-2 form-control-label">Email</label>
+              <label for="inputPassword3" class="col-sm-2 form-control-label">Reason</label>
               <div class="col-sm-10">
-                <input type="password" class="form-control" id="inputPassword3" placeholder="Your email">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Your reason">
               </div>
             </div>
             <div class="form-group row">
@@ -53,10 +118,6 @@
               </div>
             </div>
           </form>
-        </div>
-        <div class="col-xs-6">
-          <h3><b>Header</b></h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempus vestibulum urna, et dictum ex hendrerit quis. Aenean congue sagittis arcu.</p>
         </div>
       </div>
     </div>
